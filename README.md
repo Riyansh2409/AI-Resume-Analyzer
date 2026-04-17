@@ -33,7 +33,7 @@ An intelligent AI-powered system that analyzes resumes against job descriptions 
 2. Enter job description
 3. System:
    - Extracts text from resume
-   - Computes semantic similarity
+   - Computes semantic similarity using transformer embeddings
    - Extracts skills from both inputs
    - Matches skills and identifies gaps
 4. Generates:
@@ -48,17 +48,22 @@ An intelligent AI-powered system that analyzes resumes against job descriptions 
 
 ```bash
 # Clone repo
-git clone https://github.com/your-username/AI-Resume-Analyzer.git
+git clone https://github.com/Riyansh2409/AI-Resume-Analyzer.git
 
 # Go to project folder
 cd AI-Resume-Analyzer
 
 # Create virtual environment
 python -m venv venv
+
+# Activate (Windows)
 venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+
+# Download spaCy model (IMPORTANT)
+python -m spacy download en_core_web_sm
 
 # Run app
 streamlit run ui.py
