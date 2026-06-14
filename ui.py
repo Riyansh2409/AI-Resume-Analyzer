@@ -1,7 +1,7 @@
 import streamlit as st
-from file_parser import extract_text
-from utils import get_similarity
-from skills import extract_skills
+from src.parser.file_parser import extract_text
+from src.matching.similarity import get_similarity
+from src.matching.skills import extract_skills
 
 st.title("🧠 AI Resume Analyzer")
 

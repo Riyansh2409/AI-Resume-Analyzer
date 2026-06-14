@@ -1,4 +1,4 @@
-from file_parser import extract_text
+from src.parser.file_parser import extract_text
 
 resume_path = input("Enter Resume file path: ")
 job_text = input("Enter Job Description: ")
